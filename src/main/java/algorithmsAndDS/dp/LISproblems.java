@@ -1,4 +1,4 @@
-package algorithmsAndDS;
+package algorithmsAndDS.dp;
 
 
 public class LISproblems {
@@ -12,12 +12,14 @@ public class LISproblems {
      * sequence such that all elements of the subsequence are sorted in increasing order. For example, length of LIS for
      * { 10, 22, 9, 33, 21, 50, 41, 60, 80 } is 6 and LIS is {10, 22, 33, 50, 60, 80}. 
      * { 8, 7, 5, 6, 10, 11, 12, 9 } is 5 and LIS Is {5,6,10,11,12}.
+     * 
+     * Ref: https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
      */
     private void LIS() {
-        int[] a = new int[] { 10, 22, 9, 33, 21, 50, 41, 60, 80 };
+       // int[] a = new int[] { 10, 22, 9, 33, 21, 50, 41, 60, 80 };
         // int[] a = new int[] {10, 11, 12, 9, 8, 7, 5, 6 };
         // int[] a = new int[] { 8, 7, 5, 6, 10, 11, 12, 9 };
-       // int[] a = new int[] { 0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15 };
+        int[] a = new int[] { 0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15 };
        // int[] a = new int[] {10,22,9,33,21,50,41,60,80};
         System.out.println( "DP - " + lisDP( a, a.length ) );
        // System.out.println( "Brute - " + lisBruteForce( a ) );

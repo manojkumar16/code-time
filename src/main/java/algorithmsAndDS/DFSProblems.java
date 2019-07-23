@@ -11,20 +11,21 @@ public class DFSProblems {
     private Integer[] edgeTo = new Integer[vertices];
 
     public static void main( String[] args ) {
-        new DFSProblems().dfs1();
+        new DFSProblems().start();
     }
 
     // Prints the path from node1 to node2 If exists
     // Using HashMap 'hm' where key is 'node' and value will be list of nodes adjacent to key
-    private void dfs1() {
-        Map<Integer, List<Integer>> hm = new BuildGraph().buildGraph();
+    private void start() {
+        Map<Integer, List<Integer>> hm = new GraphApi().buildGraph();
 
         Integer source = 6;
         Integer d = 4;
 
-        isPath( hm, source, d );
+        dfs( hm, source );
+
         if ( marked[d] ) {
-            System.out.println( "There is path" );
+            System.out.println( "There is path from node2 to node1(source)" );
             Integer dtemp = d;
             System.out.print( dtemp + " <-- " );
             while ( true ) {
@@ -41,11 +42,11 @@ public class DFSProblems {
         }
     }
 
-    private void isPath( Map<Integer, List<Integer>> hm, Integer s, Integer d ) {
+    private void dfs( Map<Integer, List<Integer>> hm, Integer s) {
         marked[s] = true;
         for ( Integer w : hm.get( s ) ) {
             if ( !marked[w] ) {
-                isPath( hm, w, d );
+                dfs( hm, w);
                 edgeTo[w] = s;
             }
         }

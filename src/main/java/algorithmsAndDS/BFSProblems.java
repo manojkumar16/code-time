@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public class BFSProblems {
-    static Map<Integer, List<Integer>> hm = new BuildGraph().buildGraph();
+    static Map<Integer, List<Integer>> hm = new GraphApi().buildGraph();
 
     static boolean visited[] = new boolean[hm.size()];
 

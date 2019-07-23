@@ -1,5 +1,6 @@
 package algorithmsAndDS;
 
+// WRONG
 public class BinarySearchTreeProblems {
 
     public static void main( String[] args ) {
