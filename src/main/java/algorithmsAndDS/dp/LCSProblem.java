@@ -1,9 +1,13 @@
-package algorithmsAndDS;
+package algorithmsAndDS.dp;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Longest Common Subsequence
+ * 
+ * https://www.youtube.com/watch?v=NnD96abizww
+ * 
  * http://www.geeksforgeeks.org/dynamic-programming-set-4-longest-common-subsequence/
  * 
  * LCS Problem Statement: Given two sequences, find the length of longest subsequence present in both of them. A
