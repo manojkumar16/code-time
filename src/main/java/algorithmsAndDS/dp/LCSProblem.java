@@ -7,6 +7,7 @@ import java.util.List;
  * Longest Common Subsequence
  * 
  * https://www.youtube.com/watch?v=NnD96abizww
+ * https://www.youtube.com/watch?v=sSno9rV8Rhg
  * 
  * http://www.geeksforgeeks.org/dynamic-programming-set-4-longest-common-subsequence/
  * 
@@ -29,11 +30,33 @@ public class LCSProblem {
     
     public static void main( String[] args ) {
         LCS();
-        System.out.println( lcs[X.length()][Y.length()] );
+        System.out.println( "length of longest common subsequence using [Memoization]: "+ lcs[X.length()][Y.length()] );
        // System.out.println(ls);
+        
+        int max = lcsRecursion();
+        System.out.println("length of longest common subsequence using [Recursion]: "+max);
     }
 
-    private static void LCS() {
+    /**
+     * https://www.youtube.com/watch?v=sSno9rV8Rhg
+     * 
+     * @return
+     */
+    private static int lcsRecursion() {
+    		return lcsRecursion(0,0);
+	}
+
+	private static int lcsRecursion(int i, int j) {
+		if (i >= X.length() || j >= Y.length()) { // End of String
+			return 0;
+		} else if (X.charAt(i) == Y.charAt(j)) { // Char matches so increase the count
+			return 1 + lcsRecursion(i + 1, j + 1);
+		} else {
+			return Math.max(lcsRecursion(i, j + 1), lcsRecursion(i + 1, j));
+		}
+	}
+
+	private static void LCS() {
         List<Character> ls = new ArrayList<Character>();
         for ( int i = 0; i <= X.length(); i++ ) {
             lcs[i][0] = 0;
