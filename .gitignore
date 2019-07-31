@@ -1,3 +1,7 @@
+
+src/main/java/etc/TestMain.java
+src/main/java/etc/TestMain2.java
+
 target/
 pom.xml.tag
 pom.xml.releaseBackup
