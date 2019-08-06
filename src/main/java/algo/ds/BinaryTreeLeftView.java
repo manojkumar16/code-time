@@ -20,23 +20,23 @@ import java.util.Set;
  * @author m0k00i6
  *
  */
-public class LeftViewBTree {
+public class BinaryTreeLeftView {
 
 	public static void main(String[] args) {
-		new LeftViewBTree().start();
+		new BinaryTreeLeftView().start();
 
 	}
 	Set<Integer> visited = new HashSet<>();
 	private void start() {
 
-		LNode root = buildTree3();
+		Node root = buildTree3();
 
 		printLeftView(root, 0);
 
 		System.out.println("\n\n");
 	}
 
-	private void printLeftView(LNode node, int level) {
+	private void printLeftView(Node node, int level) {
 		if (node == null) {
 			return;
 		}
@@ -51,8 +51,8 @@ public class LeftViewBTree {
 
 	}
 
-	private LNode buildTree1() {
-		LNode n = newNode(10);
+	private Node buildTree1() {
+		Node n = newNode(10);
 		n.left = newNode(11);
 		n.left.left = newNode(7);
 
@@ -62,8 +62,8 @@ public class LeftViewBTree {
 		return n;
 	}
 
-	private LNode buildTree2() {
-		LNode n = newNode(4);
+	private Node buildTree2() {
+		Node n = newNode(4);
 		n.left = newNode(5);
 		n.right = newNode(2);
 		n.right.right = newNode(1);
@@ -86,8 +86,8 @@ public class LeftViewBTree {
                6
 	 * @return
 	 */
-	private LNode buildTree3() {
-		LNode n = newNode(1);
+	private Node buildTree3() {
+		Node n = newNode(1);
 		n.right = newNode(3);
 		n.left = newNode(2);
 		n.left.right = newNode(4);
@@ -98,17 +98,17 @@ public class LeftViewBTree {
 		return n;
 	}
 	
-	private LNode newNode(int d) {
-		LNode n = new LNode(d);
+	private Node newNode(int d) {
+		Node n = new Node(d);
 		return n;
 	}
 
-	private class LNode {
+	private class Node {
 		int data;
-		LNode left;
-		LNode right;
+		Node left;
+		Node right;
 
-		public LNode(int data) {
+		public Node(int data) {
 			super();
 			this.data = data;
 		}
