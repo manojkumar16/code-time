@@ -4,6 +4,9 @@ package algo.ds;
  * 
 Foldable Binary Trees
 Question: Given a binary tree, find out if the tree can be folded or not.
+Ref: 
+https://www.geeksforgeeks.org/foldable-binary-trees/
+https://www.youtube.com/watch?v=9jH2L2Ysxko
 
 A tree can be folded if left and right subtrees of the tree are structure wise mirror image of each other. An empty tree is considered as foldable.
 
@@ -43,10 +46,10 @@ Consider the below trees:
     http://www.geeksforgeeks.org/foldable-binary-trees/
     *
  */
-public class FoldableBinaryTree {
+public class BinaryTreeFoldable {
 
     public static void main( String[] args ) {
-        new FoldableBinaryTree().process();
+        new BinaryTreeFoldable().process();
 
     }
 
@@ -98,7 +101,7 @@ public class FoldableBinaryTree {
           left subtree */
         res = isStructureSame(root.left, root.right);
         
-        /* Get the originial tree back */
+        /* Get the original tree back */
         mirror(root.left);
         return res;
     }
