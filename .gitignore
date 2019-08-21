@@ -1,4 +1,7 @@
 
+.idea/
+src/main/main.iml
+
 src/main/java/etc/one/TestMain.java
 src/main/java/etc/TestMain.java
 src/main/java/etc/TestMain2.java
