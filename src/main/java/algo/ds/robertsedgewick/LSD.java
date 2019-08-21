@@ -1,5 +1,11 @@
-package algo.ds;
+package algo.ds.robertsedgewick;
 
+/**
+ * Least-Significant-Digit first string sorting algorithm
+ *
+ * @author m0k00i6
+ *
+ */
 public class LSD {
 
 	public static void main(String[] args) {
