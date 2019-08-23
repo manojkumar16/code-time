@@ -13,12 +13,48 @@ package algo.ds.leetcode;
 public class LongestPalindromicSubstring {
 
 	public static void main(String args[]) throws Exception {
-		
-		System.out.println(longestPalindromeBF("kfabad"));
-		System.out.println(longestPalindromeBF("bb"));
-		System.out.println(longestPalindromeBF("abcda"));
-		System.out.println(longestPalindromeBF("babadada"));
-		System.out.println(longestPalindromeBF("abacdfgdcaba"));
+
+		// System.out.println(longestPalindromeBF("kfabad"));
+		// System.out.println(longestPalindromeBF("bb"));
+		// System.out.println(longestPalindromeBF("abcda"));
+		// System.out.println(longestPalindromeBF("babadada"));
+		System.out.println("With Brute force approah: " + longestPalindromeBF("abacdfgdcaba"));
+
+		System.out.println("With DP approah: " + longestPalindromeDP("abacdfgdcaba"));
+	}
+
+	/**
+	 * Not working. Loot at https://www.youtube.com/watch?v=Fi5INvcmDos
+	 * 
+	 * @param s
+	 * @return
+	 */
+	private static String longestPalindromeDP(String s) {
+		String res = "";
+		int n = s.length();
+		boolean[][] cache = new boolean[n][n];
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (i == j) {
+					cache[i][j] = true;
+				} else {
+					cache[i][j] = false;
+				}
+			}
+		}
+
+		for (int i = 0; i < n; i++) {
+			for (int j = i + 1; j < n; j++) {
+				if (s.charAt(i) == s.charAt(j)) {
+					if (((i + 1 < j - 1) && (cache[i + 1][j - 1] == true)) || (i == (j - 1))) {
+						cache[i][j] = true;
+						String temp = s.substring(i, j);
+						res = res.length() < temp.length() ? res : temp;
+					}
+				}
+			}
+		}
+		return res;
 	}
 
 	public static String longestPalindromeBF(String s) {
