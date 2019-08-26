@@ -8,8 +8,8 @@ public class LevelOrderTreeTraversal {
     public static void main( String[] args ) {
         tnode root = createTree();
         System.out.println( "Level Order traversal of binary tree" );
-        printLevelOrderUsingRecursion( root );
-        // printLevelOrderUsingQueueBFS(root);
+        //printLevelOrderUsingRecursion( root );
+        printLevelOrderUsingQueueBFS(root);
     }
 
     private static void printLevelOrderUsingQueueBFS( tnode root ) {
@@ -73,12 +73,23 @@ public class LevelOrderTreeTraversal {
         }
     }
 
+    /**
+     			1
+     		  /   \
+     		2       3
+     	  /  \      / \
+         4    5    6   7
+             /          \
+            9            8
+     * @return 1,2,3,4,5,6,7,8
+     */
     private static tnode createTree() {
         tnode root = newNode( 1 );
         root.left = newNode( 2 );
         root.right = newNode( 3 );
         root.left.left = newNode( 4 );
         root.left.right = newNode( 5 );
+        root.left.right.left = newNode( 9 );
         root.right.left = newNode( 6 );
         root.right.right = newNode( 7 );
         root.right.right.right = newNode( 8 );

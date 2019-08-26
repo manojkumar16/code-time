@@ -20,6 +20,7 @@ public class LISproblems {
         // int[] a = new int[] {10, 11, 12, 9, 8, 7, 5, 6 };
         // int[] a = new int[] { 8, 7, 5, 6, 10, 11, 12, 9 };
         int[] a = new int[] { 0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15 };
+    		//int[]a = new int[] {3, 10, 2, 1, 20}; // 3
        // int[] a = new int[] {10,22,9,33,21,50,41,60,80};
         System.out.println( "DP - " + lisDP( a, a.length ) );
        // System.out.println( "Brute - " + lisBruteForce( a ) );
@@ -33,13 +34,13 @@ public class LISproblems {
             lis[i] = 1;
         }
         // Compute optimized LIS values in bottom up manner
-        for ( i = 1; i < n; i++ ) {
-            for ( j = 0; j < i; j++ ) {
-                if ( arr[i] > arr[j] && lis[i] < lis[j] + 1 ) {
-                    lis[i] = lis[j] + 1;
-                }
-            }
-        }
+		for (i = 1; i < n; i++) {
+			for (j = 0; j < i; j++) {
+				if (arr[j] < arr[i]) {
+					lis[i] = Math.max(lis[i], lis[j] + 1);
+				}
+			}
+		}
         // Pick maximum of all LIS values
         for ( i = 0; i < n; i++ ) {
             if ( max < lis[i] ) {
