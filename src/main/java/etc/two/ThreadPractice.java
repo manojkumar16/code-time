@@ -1,4 +1,6 @@
-package algo.ds;
+package etc.two;
+
+import algo.ds.AA;
 
 public class ThreadPractice {
     public static void main( String[] args ) {

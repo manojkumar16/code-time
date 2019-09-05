@@ -1,4 +1,4 @@
-package algo.ds;
+package etc.two;
 
 import java.util.Stack;
 

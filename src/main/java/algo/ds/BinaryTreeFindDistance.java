@@ -7,10 +7,10 @@ import java.util.List;
  * http://www.geeksforgeeks.org/find-distance-two-given-nodes/
  * 
  */
-public class FindDistance {
+public class BinaryTreeFindDistance {
 
     public static void main( String[] args ) {
-        FindDistance ob = new FindDistance();
+        BinaryTreeFindDistance ob = new BinaryTreeFindDistance();
         DNode root = ob.createTree();
         System.out.println( ob.findDistance( root, 4, 5 ) );
 

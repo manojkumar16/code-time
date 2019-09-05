@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-public class pullRequestPerformance {
+public class PullRequestPerformance {
 
     static List<PDRuntimeData> records = new ArrayList<PDRuntimeData>();
 
@@ -16,7 +16,7 @@ public class pullRequestPerformance {
 
     public static void main( String[] args ) {
 
-        pullRequestPerformance pr = new pullRequestPerformance();
+        PullRequestPerformance pr = new PullRequestPerformance();
         pr.fillRecords( 10000 );
         
         System.out.println( "Total records: " + records.size() );

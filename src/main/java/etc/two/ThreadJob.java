@@ -1,4 +1,4 @@
-package algo.ds;
+package etc.two;
 
 public class ThreadJob extends Thread {
     private int counter;

@@ -12,10 +12,10 @@ import java.util.concurrent.LinkedBlockingDeque;
  * @author m0k00i6
  *
  */
-public class InsertNode {
+public class BinaryTreeInsertNodeLevelOrder {
 
 	public static void main(String[] args) {
-		new InsertNode().start();
+		new BinaryTreeInsertNodeLevelOrder().start();
 	}
 
 	boolean isAdded = false; // Used in Recursion
