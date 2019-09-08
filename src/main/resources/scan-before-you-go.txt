@@ -2,12 +2,14 @@ BFSProblems
 BinaryTreeLeftView
 BinaryTreeSize
 BinaryTreeUniversal
-BinaryWeightedTree
+BinaryWeightedTree -
 CountWays
 DetectCycleInGraph
 DFSProblems
-EnumerationOfBTrees
-BinaryTreeFindDistance
+EnumerationOfBTrees - 
+BinaryTreeFindDistance**
+BinaryTreeLowestCommonAncestor
+FirstCommonAncestorBST
 BinaryTreeFoldable
 GroupAnagrams
 BinaryTreeInsertNodeLevelOrder

@@ -2,6 +2,8 @@ package algo.ds;
 
 /**
  * 
+ * https://www.dailycodingproblem.com/blog/unival-trees/
+ * 
  * https://www.youtube.com/watch?v=7HgsS8bRvjo
  * https://www.youtube.com/watch?v=BkUEFJZpZRw
  * 

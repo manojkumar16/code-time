@@ -4,6 +4,8 @@ package algo.ds;
  * Design an algorithm and write code to find the first common ancestor of two
  * nodes in a binary search tree.
  * 
+ * https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/
+ * 
  * @author m0k00i6
  *
  */
