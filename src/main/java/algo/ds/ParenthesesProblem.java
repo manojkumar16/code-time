@@ -18,7 +18,7 @@ public class ParenthesesProblem {
     static char[] str = new char[100];
 
     public static void main( String[] args ) {
-        int n = 5;
+        int n = 3;
         printParenthesis( n );
     }
 
@@ -35,11 +35,11 @@ public class ParenthesesProblem {
             return;
         }
         if ( open > close ) {
-            str[pos] = '}';
+            str[pos] = ')';
             _printParenthesis( pos + 1, n, open, close + 1 );
         }
         if ( open < n ) {
-            str[pos] = '{';
+            str[pos] = '(';
             _printParenthesis( pos + 1, n, open + 1, close );
         }
     }

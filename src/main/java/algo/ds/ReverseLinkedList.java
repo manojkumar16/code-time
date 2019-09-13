@@ -2,7 +2,7 @@ package algo.ds;
 
 /**
  * http://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/
- * @author mkprasad
+ * @author manoj
  *
  */
 public class ReverseLinkedList {

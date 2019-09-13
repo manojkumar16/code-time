@@ -1,5 +1,12 @@
 package algo.ds;
 
+/**
+ * 
+ * Ref: https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/60294/Solution-explained
+ * 
+ * @author m0k00i6
+ *
+ */
 public class KthSmallestElement {
 
     public static void main( String[] args ) {

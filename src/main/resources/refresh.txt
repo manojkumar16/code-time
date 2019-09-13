@@ -7,19 +7,26 @@ CountWays
 DetectCycleInGraph
 DFSProblems
 EnumerationOfBTrees - 
+BinaryTreeLowestCommonAncestor**
 BinaryTreeFindDistance**
-BinaryTreeLowestCommonAncestor
-FirstCommonAncestorBST
+FirstCommonAncestorBST**
 BinaryTreeFoldable
 GroupAnagrams
 BinaryTreeInsertNodeLevelOrder
+SerializeDeserializeBinaryTree
+
 KthSmallestElement
 LargestSumSubArray
-LevelOrderTreeTraversal
+LCSProblem
+LISproblems
+MaxSumIncreasingSubsequence
+LevelOrderTreeTraversal - code it
 LinkedListKthToLastElement
 LinkedListPartition
+PermutationOfString
 LongestCommonSubstring
-LongestRepeatedSubstring
+LongestRepeatedSubstring - 
+LongestSubstringWithoutRepeatingCharacters
 MirrorBinayTree
 NextGreaterElement - 
 NextSmallerElement - 
@@ -29,10 +36,10 @@ ReverseAlternateLevel
 ReverseLinkedList
 RotateLinkedList
 SingleLinkedListMiddleOperation
-StringPermutations
 SubsetSum
-PermutationOfString
 LSD
+
+PermutateParentheses
 
 All ctci
 All leetcode

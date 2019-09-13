@@ -21,18 +21,18 @@ package algo.ds;
        3   1
  */
 public class MirrorBinayTree {
-    public void mirror( Node root ) {
-        if(root == null) {
-            return;
-        }
-            mirror(root.left);
-            mirror(root.right);
-            
-            Node temp = root.left;
-            root.left = root.right;
-            root.right = temp;
-        
-    }
+	public void mirror(Node root) {
+		if (root == null) {
+			return;
+		}
+		mirror(root.left);
+		mirror(root.right);
+
+		Node temp = root.left;
+		root.left = root.right;
+		root.right = temp;
+
+	}
     
     public static void main( String[] args ) {
         new MirrorBinayTree().process();

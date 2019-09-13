@@ -8,7 +8,8 @@ Ref:
 https://www.geeksforgeeks.org/foldable-binary-trees/
 https://www.youtube.com/watch?v=9jH2L2Ysxko
 
-A tree can be folded if left and right subtrees of the tree are structure wise mirror image of each other. An empty tree is considered as foldable.
+A tree can be folded if left and right subtrees of the tree are structure 
+wise mirror image of each other. An empty tree is considered as foldable.
 
 Consider the below trees:
 (a) and (b) can be folded.
