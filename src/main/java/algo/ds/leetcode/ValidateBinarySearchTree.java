@@ -3,6 +3,13 @@ package algo.ds.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/625/
+ * Inorder traversal implementation
+ * 
+ * @author mk
+ *
+ */
 public class ValidateBinarySearchTree {
 
 	public static void main(String[] args) {
